@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- The link to vite.svg has been removed as the file does not exist in the project -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VGHKS Surgical Code Finder</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,7 +16,9 @@
         }
       }
     </script>
-  <script type="importmap">
+    <!-- Add Babel Standalone for in-browser JSX/TSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="importmap">
 {
   "imports": {
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
@@ -29,6 +30,7 @@
 </head>
   <body class="bg-gray-50">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Change script type to "text/babel" and add data-type="module" so Babel can transpile it -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
