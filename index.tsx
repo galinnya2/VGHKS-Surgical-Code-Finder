@@ -300,6 +300,8 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '78002G', code: '78002G', name_ch: '子宮附屬器部份或全部切除-雙側', name_en: 'Partial or complete adnexectomy, bilateral (BSO/enucleation/salpingectomy)' },
     { id: '78006F', code: '78006F', name_ch: '卵巢膿瘍切開引流術', name_en: 'Incision and drainage of ovarian abscess' },
     { id: '78002J', code: '78002J', name_ch: '卵巢部份切片術', name_en: 'Biopsy ovary, incisional' },
+    { id: '43417D', code: '43417D', name_ch: '膀胱鏡檢', name_en: 'Fibrocystoscopy' },
+    { id: '43453F', code: '43453F', name_ch: '診斷性子宮鏡', name_en: 'Diagnostic hysteroscopy' },
 ];
 
 // From: hooks/useLocalStorage.ts
