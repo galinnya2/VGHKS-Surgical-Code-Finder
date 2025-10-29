@@ -19,9 +19,9 @@
     <!-- Add Babel Standalone for in-browser JSX/TSX transformation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- 
-      This is the new, corrected importmap.
-      It uses a reliable public CDN (esm.sh) and provides the exact paths 
-      for the React modules your application needs to start.
+      This is the final, clean, and correct importmap.
+      It contains ONLY the necessary and working URLs from a reliable CDN.
+      All conflicting and broken URLs have been removed.
     -->
     <script type="importmap">
 {
@@ -35,7 +35,19 @@
 </script>
 </head>
   <body class="bg-gray-50">
-    <div id="root"></div>
+    <div id="root">
+      <!-- 
+        This is a fallback message. If the React app loads correctly,
+        it will be replaced. If you still see this message after a few
+        seconds, it means there is a script error.
+      -->
+      <div class="flex items-center justify-center min-h-screen">
+        <div class="text-center p-8">
+          <h1 class="text-2xl font-bold text-gray-700">Loading Application...</h1>
+          <p class="text-gray-500 mt-2">If you see this for more than a few seconds, there might be a script error. Please check the browser's developer console (F12).</p>
+        </div>
+      </div>
+    </div>
     <!-- Tell Babel to use React and TypeScript presets to transpile the code -->
     <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
