@@ -50,7 +50,7 @@ const CloseIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 
 // From: constants.ts
 const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
-    { id: '70006B', code: '70006B', name_ch: '肌肉或深部組織腫瘤切除術及異物取出術', name_en: 'Excision of muscle or deep tissue tumor, deep foreign body' },
+    { id: '70006B', code: '70006B', name_ch: '肌肉或深部組織腫瘤切除術及異物取出術 / 移除Port-A', name_en: 'Excision of muscle or deep tissue tumor, deep foreign body (Remove Port-A)' },
     { id: '71215C', code: '71215C', name_ch: '二氧化碳雷射手術', name_en: 'CO2 laser operation' },
     { id: '71899E', code: '71899E', name_ch: '下腹動脈結紮後分離(用於產後大出血或骨盆出血)', name_en: 'Hypogastric artery ligation related to postpartum hemorrhage or uncontrolled bleeding of pelvis' },
     { id: '71882E', code: '71882E', name_ch: '子宮動脈結紮與分離', name_en: 'uterine artery ligation' },
@@ -217,7 +217,7 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '77406C', code: '77406C', name_ch: '子宮頸錐狀切片(刀切)', name_en: 'Cervical conization by knife' },
     { id: '77411E', code: '77411E', name_ch: '子宮頸錐狀切片(利用雷射)', name_en: 'Uterine cervix laser conization' },
     { id: '77408A', code: '77408A', name_ch: '子宮頸切斷術', name_en: 'Cervical amputation' },
-    { id: '77410F', code: '77410F', name_ch: '子宮頸蒂瘤切除術', name_en: 'Cervical polypectomy' },
+    { id: '77410F', code: '77410F', name_ch: '子宮頸蒂瘤切除術 / 子宮頸息肉切除術', name_en: 'Cervical polypectomy' },
     { id: '77407B', code: '77407B', name_ch: '陰道式殘餘子宮頸切除術', name_en: 'Vaginal excision of cervical stump' },
     { id: '77414B', code: '77414B', name_ch: '腹式殘餘子宮頸切除術', name_en: 'Abdominal excision of cervical stump' },
     { id: '77409J', code: '77409J', name_ch: '經陰道子宮懸吊合併子宮頸部份切除術', name_en: 'Manchester operation (Transvaginal uterine suspension with partial cervicectomy)' },
@@ -272,7 +272,8 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '78212G', code: '78212G', name_ch: '子宮外孕手術', name_en: 'Ectopic pregnancy operation' },
     { id: '78214E', code: '78214E', name_ch: '胎盤取出術', name_en: 'Manual removal of placenta' },
     { id: '78221E', code: '78221E', name_ch: '剖腹產術', name_en: 'Cesarean section' },
-    { id: '78226A', code: '78226A', name_ch: '剖腹產術,自行要需求額外付費21000', name_en: 'CS, self-require, extra pay 21000' },
+    { id: '78225A', code: '78225A', name_ch: '剖腹產術,自行要需求額外付費23000，自費(請合併開立78226J)', name_en: 'CS shortfall 23000, self-require' },
+    { id: '78226J', code: '78226J', name_ch: '剖腹產術,自行要需求額外付費23000，自費(請合併開立78225A)', name_en: 'CS, self-require, extra pay 23000' },
     { id: '78222D', code: '78222D', name_ch: '前置胎盤或植入性胎盤之剖腹產', name_en: 'C/S due to placenta previa or placenta accreta' },
     { id: '78223C', code: '78223C', name_ch: '剖腹產合併次全子宮切除術', name_en: 'Subtotal hysterectomy after Cesarean section' },
     { id: '78224B', code: '78224B', name_ch: '剖腹產合併全子宮切除術', name_en: 'Total hysterectomy after Cesarean section' },
@@ -281,7 +282,7 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '78233J', code: '78233J', name_ch: '妊娠超過十二週流產或死胎刮宮術', name_en: 'D&C (>12.Week)' },
     { id: '78235H', code: '78235H', name_ch: '引產無效後之流產或死胎刮宮術', name_en: 'Dilation and evacuation after induction failure' },
     { id: '78242H', code: '78242H', name_ch: '療病流產:以擴張及括除包括吸出括除', name_en: 'Therapeutic abortion by D&C S&C' },
-    { id: '78236G', code: '78236G', name_ch: '子宮內管刮除術', name_en: 'Endocervical curettage' },
+    { id: '78236G', code: '78236G', name_ch: '子宮內管刮除術', name_en: 'Endocervical curettage (ECC)' },
     { id: '78243G', code: '78243G', name_ch: '子宮切開流產術', name_en: 'Hysterotomy for termination of pregnancy' },
     { id: '78245E', code: '78245E', name_ch: '死胎之引產(12-24週)', name_en: 'Medical induction for fetal death (12-24 weeks)' },
     { id: '78246D', code: '78246D', name_ch: '死胎之引產(超過24週)', name_en: 'Medical induction for fetal death (after 24 weeks)' },
@@ -302,6 +303,13 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '78002J', code: '78002J', name_ch: '卵巢部份切片術', name_en: 'Biopsy ovary, incisional' },
     { id: '43417D', code: '43417D', name_ch: '膀胱鏡檢', name_en: 'Fibrocystoscopy' },
     { id: '43453F', code: '43453F', name_ch: '診斷性子宮鏡', name_en: 'Diagnostic hysteroscopy' },
+    { id: '77421B', code: '77421B', name_ch: '生殖道息肉切除', name_en: 'Genital tract polypectomy / Vaginal cuff polypectomy' },
+    { id: '40617E', code: '40617E', name_ch: '人工血管置入手術', name_en: 'Port-A set up' },
+    { id: '54301B', code: '54301B', name_ch: '移除雙J導管', name_en: 'Remove D-J / Removal of double J cath.' },
+    { id: '64504J', code: '64504J', name_ch: '子宮內避孕器植入(自費)', name_en: 'IUD insertion, pay self' },
+    { id: '64511J', code: '64511J', name_ch: '移除子宮內避孕器(看的到線，自費)', name_en: 'Removal IUD with Tail(pay self)' },
+    { id: '64512I', code: '64512I', name_ch: '移除子宮內避孕器(看不到線，自費)', name_en: 'Removal IUD without Tail(pay self)' },
+    { id: '64620C', code: '64620C', name_ch: '移除子宮內避孕器(看不到線，上麻，健保)', name_en: 'Removal IUD(& dilataton anesthe)' },
 ];
 
 // From: hooks/useLocalStorage.ts
