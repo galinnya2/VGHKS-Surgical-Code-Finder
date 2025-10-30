@@ -594,7 +594,7 @@ const AdminView: React.FC<{
 // From: App.tsx
 function App() {
   const [isAdminView, setIsAdminView] = useState(false);
-  const [codes, setCodes] = useLocalStorage<SurgicalCode[]>('surgicalCodes', INITIAL_SURGICAL_CODES);
+  const [codes, setCodes] = useState<SurgicalCode[]>(INITIAL_SURGICAL_CODES);
 
   return (
     <div className="min-h-screen bg-gray-100 font-sans">
