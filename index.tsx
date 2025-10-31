@@ -311,6 +311,15 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '64511J', code: '64511J', name_ch: '移除子宮內避孕器(看的到線，自費)', name_en: 'Removal IUD with Tail(pay self)' },
     { id: '64512I', code: '64512I', name_ch: '移除子宮內避孕器(看不到線，自費)', name_en: 'Removal IUD without Tail(pay self)' },
     { id: '64620C', code: '64620C', name_ch: '移除子宮內避孕器(看不到線，上麻，健保)', name_en: 'Removal IUD(& dilataton anesthe)' },
+    { id: '77266E', code: '77266E', name_ch: '達文西腹腔鏡下陰道懸吊術', name_en: 'Robotic (DaVinci) Vaginal suspension' },
+    { id: '77634F', code: '77634F', name_ch: '達文西子宮完全切除術', name_en: 'Robotic (DaVinci) total hysterectomy' },
+    { id: '77635E', code: '77635E', name_ch: '達文西腹腔鏡子宮肌瘤切除術', name_en: 'Robotic (DaVinci) myomectomy' },
+    { id: '77642E', code: '77642E', name_ch: '達文西次全子宮切除術', name_en: 'Robotic (DaVinci) subtotal hysterectomy' },
+    { id: '78018A', code: '78018A', name_ch: '達文西腹腔鏡卵巢部分或全部切除術，單側', name_en: 'Robotic (DaVinci) USO/enucleation/salpingectomy' },
+    { id: '78019J', code: '78019J', name_ch: '達文西腹腔鏡卵巢部分或全部切除術，雙側', name_en: 'Robotic (DaVinci) BSO/enucleation/salpingectomy' },
+    { id: '77636D', code: '77636D', name_ch: '達文西腹腔鏡式婦癌分期手術', name_en: 'Robotic (DaVinci) staging surgery' },
+    { id: '77643D', code: '77643D', name_ch: '達文西骨盆腔子宮內膜異位電燒切除', name_en: 'Robotic (DaVinci) electrocauterization of endometriosis' },
+  
 ];
 
 // From: hooks/useLocalStorage.ts
