@@ -319,7 +319,15 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '78019J', code: '78019J', name_ch: '達文西腹腔鏡卵巢部分或全部切除術，雙側', name_en: 'Robotic (DaVinci) BSO/enucleation/salpingectomy' },
     { id: '77636D', code: '77636D', name_ch: '達文西腹腔鏡式婦癌分期手術', name_en: 'Robotic (DaVinci) staging surgery' },
     { id: '77643D', code: '77643D', name_ch: '達文西骨盆腔子宮內膜異位電燒切除', name_en: 'Robotic (DaVinci) electrocauterization of endometriosis' },
-  
+    { id: '77638B', code: '77638B', name_ch: '腹腔鏡骨盆腔沾黏分離術', name_en: 'Laparoscopic pelvic adhesiolysis' },
+    { id: '77639A', code: '77639A', name_ch: '腹腔鏡子宮懸吊術', name_en: 'Laparoscopic uterine suspension' },
+    { id: '77640G', code: '77640G', name_ch: '腹腔鏡卵巢懸吊術', name_en: 'Laparoscopic ovarian transposition' },
+    { id: '77641F', code: '77641F', name_ch: '腹腔鏡全子宮根除手術', name_en: 'Laparoscopic radical hysterectomy' },
+    { id: '77806C', code: '77806C', name_ch: '腹腔鏡輸卵管整形術', name_en: 'Laparoscopic tuboplasty' },
+    { id: '64611E', code: '64611E', name_ch: '菜花/尖形濕疣雷射燒灼/電燒', name_en: 'Condyloma laser vaporization' },
+    { id: '77201H', code: '77201H', name_ch: '陰唇切片', name_en: 'Excisional biopsy of vulva' },
+    { id: '43411J', code: '43411J', name_ch: '膀胱鏡檢', name_en: 'Cystoscopy' },
+    { id: '64031I', code: '64031I', name_ch: '產後出血確認出血', name_en: 'Ante/Post partum hemorrhange, Check bleeding' },  
 ];
 
 // From: hooks/useLocalStorage.ts
