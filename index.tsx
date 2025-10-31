@@ -328,6 +328,7 @@ const INITIAL_SURGICAL_CODES: SurgicalCode[] = [
     { id: '77201H', code: '77201H', name_ch: '陰唇切片', name_en: 'Excisional biopsy of vulva' },
     { id: '43411J', code: '43411J', name_ch: '膀胱鏡檢', name_en: 'Cystoscopy' },
     { id: '64031I', code: '64031I', name_ch: '產後出血確認出血', name_en: 'Ante/Post partum hemorrhange, Check bleeding' },  
+    { id: '43191A', code: '43191A', name_ch: '診斷性腹腔鏡', name_en: 'Diagnostic laparoscopy' },
 ];
 
 // From: hooks/useLocalStorage.ts
